@@ -6,10 +6,11 @@ use Dompdf\Dompdf;
 
 // instantiate and use the dompdf class
 $dompdf = new Dompdf();
-$dompdf->loadHtml(file_get_contents('ppdb/formulirppdb.html'));
+// $dompdf->loadHtml("hallo word");
+$dompdf->loadHtml(file_get_contents('ppdb/index.html'));
 
 // (Optional) Setup the paper size and orientation
-$dompdf->setPaper('A4', 'landscape');
+$dompdf->setPaper('A4', 'potrait');
 
 // Render the HTML as PDF
 $dompdf->render();

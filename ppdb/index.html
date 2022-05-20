@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .numResetCounter {
+            counter-reset: my-sec-counter;
+        }
+        .numResetCounter2 {
+            counter-reset: my-sec-counter-2;
+        }
+        .numIncrement {
+            font-weight: normal;
+            text-align: center;
+        }
+        .numIncrement::before {
+            counter-increment: my-sec-counter;
+            content: counter(my-sec-counter) ". ";
+        }
+        .numIncrement2 {
+            font-weight: normal;
+            text-align: center;
+        }
+        .numIncrement2::before {
+            counter-increment: my-sec-counter-2;
+            content: counter(my-sec-counter-2) ". ";
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="2" class="col-2 text-center align-middle"><img src="img/logo.svg" alt="logo" style="width: 4rem;"></th>
+                    <th scope="col" colspan="7" class="col-9 text-center text-uppercase">PEMERINTAH KOTA BOGOR <br>DINAS PENDIDIKAN<br>PANITIA PENERIMAAN PESERTA DIDIK BARU (PPDB)<br>TAHUN PELAJARAN 2022/2023</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="col" colspan="2" class="col-2 text-white bg-black text-center fw-bold text-uppercase">NO PENDAFTARAN</td>
+                    <td colspan="7">2022050804000008</td>
+                </tr>
+
+                <!-- IDENTITAS CALON PESERTA DIDIK -->
+
+                <div class="numResetCounter">
+                    <tr>
+                        <th scope="col" colspan="9" class="fw-bold text-uppercase" style="background-color: #BFBFBF;">A. Identitas calon peserta didik</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement"></th>
+                        <td colspan="1">Nama Calon Peserta Didik <br> (Sesuai Ijazah)</td>
+                        <td colspan="7" class="fw-bold">Kimora Lakeisha Setiawan</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement"></th>
+                        <td colspan="1">No Induk Kependudukan/NIK</td>
+                        <td colspan="7" class="fw-bold">3271014309150004</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement"></th>
+                        <td colspan="1">Jenis Kelamin</td>
+                        <td colspan="7" class="fw-bold">Perempuan</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement"></th>
+                        <td colspan="1">Tempat, Tanggal Lahir</td>
+                        <td colspan="4">Bogor <br> (Tempat Lahir)</td>
+                        <td class="text-center">03 <br> (Tanggal)</td>
+                        <td class="text-center">09 <br> (Bulan)</td>
+                        <td class="text-center">2015 <br> (Tahun)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement"></th>
+                        <td colspan="1">Asal Sekolah</td>
+                        <td colspan="7">SD/MI</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement" rowspan="3"></th>
+                        <td rowspan="3" colspan="1">Alamat Tempat Tinggal <br> (Sesuai Alamat Kartu Keluarga)</td>
+                        <td colspan="3">Jalan Satu Seta</td>
+                        <td>RT</td>
+                        <td>2</td>
+                        <td>RW</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Dusun :</td>
+                        <td colspan="5">Desa/Kelurahan :</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Kec. : Kec. Kota Bogor Utara</td>
+                        <td colspan="5">Kab/Kota : Kota Bogor</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement"></th>
+                        <td colspan="1">Jalur</td>
+                        <td colspan="7">Zonasi</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement" rowspan="2"></th>
+                        <td rowspan="2">Pilihan Sekolah</td>
+                        <!-- <td>1</td> -->
+                        <td colspan="1">1. 20220508</td>
+                        <td colspan="6">SD NEGERI KEDUNG HALANG 1</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>2</td> -->
+                        <td colspan="1">2. </td>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement"></th>
+                        <td>Koordinat Rumah <br> (Khusus Jalur Zonasi)</td>
+                        <td colspan="2">1. Latitude /Lintang : -6.5284327768626</td>
+                        <td colspan="5">2. Longitude / Bujur : 106.81672632694</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement" rowspan="2"></th>
+                        <td rowspan="2">Jarak Rumah <br> (Khusus Jalur Zonasi)</td>
+                        <!-- <td>1</td> -->
+                        <td colspan="1">20220508</td>
+                        <td colspan="6">SD NEGERI KEDUNG HALANG 1</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>2</td> -->
+                        <td colspan="1">2.</td>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement"></th>
+                        <td colspan="1">Prestasi Tertinggi <br> (Khusus Jalur Prestasi)</td>
+                        <td colspan="4"></td>
+                        <td colspan="3">Skor Prestasi :</td>
+                    </tr>
+                </div>
+                
+                <!-- IDENTITAS ORANG TUA -->
+
+                <div class="numResetCounter2">
+                    <tr>
+                        <th scope="col" colspan="9" class="fw-bold text-uppercase" style="background-color: #BFBFBF;">B. Identitas orang tua</td>
+                        </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement2"></th>
+                        <td colspan="1">Nama Ayah/Ibu/Wali</td>
+                        <td colspan="7">Alex Wirawan</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement2"></th>
+                        <td colspan="1">Tempat Tanggal Lahir</td>
+                        <td colspan="4">Bandung <br> (Tempat Lahir)</td>
+                        <td class="text-center">05 <br> (Tanggal)</td>
+                        <td class="text-center">07 <br> (Bulan)</td>
+                        <td class="text-center">1998 <br> (Tahun)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement2"></th>
+                        <td colspan="1">Pendidikan Terakhir</td>
+                        <td colspan="7">D1/D2/D3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement2"></th>
+                        <td colspan="1">Pekerjaan</td>
+                        <td colspan="7">Pegawai Swasta</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement2" rowspan="3"></th>
+                        <td rowspan="3" colspan="1">Alamat Tempat Tinggal <br> (Sesuai Alamat Kartu Keluarga)</td>
+                        <td colspan="3">Jalan Satu Seta (Jalan)</td>
+                        <td>RT</td>
+                        <td>2</td>
+                        <td>RW</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Dusun :</td>
+                        <td colspan="5">Desa/Kelurahan :</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Kec. : Kec. Kota Bogor Utara</td>
+                        <td colspan="5">Kab/Kota : Kota Bogor</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="numIncrement2"></th>
+                        <td colspan="1">Telepon yang dapat dihubungi</td>
+                        <td colspan="7"></td>
+                    </tr>
+                </div>
+            </tbody>
+        </table>    
+    </div>
+</body>
+</html>
