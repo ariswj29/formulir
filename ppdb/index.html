@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link href="../bootstrap-5.2.0-beta1-dist/css/bootstrap.css" rel="stylesheet">
     <title>Document</title>
     <style>
         .col {
             border:1px solid black;
+        }
+        .nodaftar {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin-left: 5px;
+        }
+        .nodaftar > div {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-right: 1px;
+            padding: 10px 15px;
+            border: 1px dashed black;
         }
         .ttd {
             position: relative;
@@ -65,10 +80,32 @@
             <div class="col col-1">12</div>
         </div>
         <div class="row text-center">
-            <div class="col col-3"><img src="img/logo.png" style="width: 4rem;"></div>
-            <div class="col col-9">PEMERINTAH KOTA BOGOR<br>DINAS PENDIDIKAN<br>PANITIA PENERIMAAN PESERTA DIDIK BARU (PPDB)<br>TAHUN PELAJARAN 2022/2023</div>
+            <div class="col col-3"><img src="img/logo.svg" style="width: 4rem;"></div>
+            <div class="col col-9 fw-bold">PEMERINTAH KOTA BOGOR<br>DINAS PENDIDIKAN<br>PANITIA PENERIMAAN PESERTA DIDIK BARU (PPDB)<br>TAHUN PELAJARAN 2022/2023</div>
         </div>
-
+        <div class="row d-flex">
+            <div class="col col-3 bg-black text-white fw-bold text-center text-uppercase">Nomor Pendaftaran</div>
+            <div class="col">
+                <div class="nodaftar">
+                    <div>2</div>
+                    <div>0</div>
+                    <div>2</div>
+                    <div>2</div>
+                    <div>0</div>
+                    <div>5</div>
+                    <div>0</div>
+                    <div>8</div>
+                    <div>0</div>
+                    <div>4</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>8</div>
+                </div>
+            </div>
+        </div>
         <!-- IDENTITAS CALON PESERTA DIDIK -->
         <div class="row numResetCounter">
             <div class="col fw-bold" style="background-color: #c0bfbf;">A. Identitas Calon Peserta Didik</div>
