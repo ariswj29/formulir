@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .col {
+            border:1px solid black;
+        }
+        .ttd {
+            position: relative;
+            border-top: 2px solid #000;
+        }
+        .ttd::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -0.3rem;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-top: 2px dotted #000;
+        }
+        .numResetCounter {
+            counter-reset: my-sec-counter;
+        }
+        .numResetCounter2 {
+            counter-reset: my-sec-counter-2;
+        }
+        .numIncrement {
+            font-weight: normal;
+            text-align: center;
+        }
+        .numIncrement::before {
+            counter-increment: my-sec-counter;
+            content: counter(my-sec-counter) ". ";
+        }
+        .numIncrement2 {
+            font-weight: normal;
+            text-align: center;
+        }
+        .numIncrement2::before {
+            counter-increment: my-sec-counter-2;
+            content: counter(my-sec-counter-2) ". ";
+        }
+    </style>
+</head>
+<body>
+    <div class="container align-middle my-5">
+        <div class="row">
+            <div class="col col-1">1</div>
+            <div class="col col-1">2</div>
+            <div class="col col-1">3</div>
+            <div class="col col-1">4</div>
+            <div class="col col-1">5</div>
+            <div class="col col-1">6</div>
+            <div class="col col-1">7</div>
+            <div class="col col-1">8</div>
+            <div class="col col-1">9</div>
+            <div class="col col-1">10</div>
+            <div class="col col-1">11</div>
+            <div class="col col-1">12</div>
+        </div>
+        <div class="row text-center">
+            <div class="col col-3"><img src="img/logo.png" style="width: 4rem;"></div>
+            <div class="col col-9">PEMERINTAH KOTA BOGOR<br>DINAS PENDIDIKAN<br>PANITIA PENERIMAAN PESERTA DIDIK BARU (PPDB)<br>TAHUN PELAJARAN 2022/2023</div>
+        </div>
+
+        <!-- IDENTITAS CALON PESERTA DIDIK -->
+        <div class="row numResetCounter">
+            <div class="col fw-bold" style="background-color: #c0bfbf;">A. Identitas Calon Peserta Didik</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Nama Calon Peserta Didik (Sesuai Ijazah)</div>
+            <div class="col col-8 fw-bold">Kimora Lakeisha Setiawan</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Nomor Induk Kependudukan/NIK</div>
+            <div class="col col-8 fw-bold">3271014309150004</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Jenis Kelamin</div>
+            <div class="col col-8 fw-bold">Perempuan</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Tempat, Tanggal Lahir</div>
+            <div class="col col-5">Bogor<br>(Tempat Lahir)</div>
+            <div class="col col-1 text-center">03<br>(Tanggal)</div>
+            <div class="col col-1 text-center">09<br>(Bulan)</div>
+            <div class="col col-1 text-center">2015<br>(Tahun)</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Asal Sekolah</div>
+            <div class="col col-8">SD/MI</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Alamat Tempat Tinggal<br>(Sesuai Alamat Kartu Keluarga)</div>
+            <div class="col col-8">
+                <div class="row" style="height: 4rem;">
+                    <div class="col col-8">Jalan Satu Setu</div>
+                    <div class="col col-1">RT</div>
+                    <div class="col col-1">2</div>
+                    <div class="col col-1">RW</div>
+                    <div class="col col-1">4</div>
+                </div>
+                <div class="row">
+                    <div class="col">Dusun :</div>
+                    <div class="col">Desa/Kelurahan :</div>
+                </div>
+                <div class="row">
+                    <div class="col">Kec : Kec. Kota Bogor Utara</div>
+                    <div class="col">Kab/Kota : Kota Bogor</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Jalur</div>
+            <div class="col col-8">Zonasi</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Alamat Tempat Tinggal<br>(Sesuai Alamat Kartu Keluarga)</div>
+            <div class="col col-8">
+                <div class="row">
+                    <div class="col col-1 text-center" style="background-color: #c0bfbf;">1</div>
+                    <div class="col col-2 text-center fw-bold">20220508</div>
+                    <div class="col text-center fw-bold">SD NEGERI KEDUNG HALANG 1</div>
+                </div>
+                <div class="row">
+                    <div class="col col-1 text-center" style="background-color: #c0bfbf;">2</div>
+                    <div class="col col-2 text-center fw-bold"></div>
+                    <div class="col text-center fw-bold"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Koordinat Rumah (Khusus Jalur Zonasi)</div>
+            <div class="col col-4">1. Latitude /Lintang : -6.5284327768626</div>
+            <div class="col col-4">2. Longitude / Bujur : 106.81672632694</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Jarak Rumah<br>(Khusus Jalur Zonasi)</div>
+            <div class="col col-8">
+                <div class="row">
+                    <div class="col col-1 text-center" style="background-color: #c0bfbf;">1</div>
+                    <div class="col col-2 text-center fw-bold">20220508</div>
+                    <div class="col text-center fw-bold">3.29 Km</div>
+                </div>
+                <div class="row">
+                    <div class="col col-1 text-center" style="background-color: #c0bfbf;">2</div>
+                    <div class="col col-2 text-center fw-bold"></div>
+                    <div class="col text-center fw-bold"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement"></div>
+            <div class="col col-3">Prestasi Tertinggi<br>Khusus Jalur Prestasi</div>
+            <div class="col col-5"></div>
+            <div class="col col-3">Skor Prestasi :</div>
+        </div>
+
+        <!-- IDENTITAS ORANG TUA -->
+        <div class="row numResetCounter2">
+            <div class="col fw-bold" style="background-color: #c0bfbf;">B. Identitas Orang Tua</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement2"></div>
+            <div class="col col-3">Nama Ayah/Ibu/Wali</div>
+            <div class="col col-8"></div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement2"></div>
+            <div class="col col-3">Tempat, Tanggal Lahir</div>
+            <div class="col col-5">Bogor<br>(Tempat Lahir)</div>
+            <div class="col col-1 text-center">05<br>(Tanggal)</div>
+            <div class="col col-1 text-center">07<br>(Bulan)</div>
+            <div class="col col-1 text-center">1998<br>(Tahun)</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement2"></div>
+            <div class="col col-3">Pendidikan Terakhir</div>
+            <div class="col col-8">D1/D2/D3</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement2"></div>
+            <div class="col col-3">Pekerjaan</div>
+            <div class="col col-8">Pegawai Swasta</div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement2"></div>
+            <div class="col col-3">Alamat Tempat Tinggal<br>(Sesuai Alamat Kartu Keluarga)</div>
+            <div class="col col-8">
+                <div class="row" style="height: 4rem;">
+                    <div class="col col-8">Jalan Satu Setu (Jalan)</div>
+                    <div class="col col-1">RT</div>
+                    <div class="col col-1"></div>
+                    <div class="col col-1">RW</div>
+                    <div class="col col-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col">Dusun :</div>
+                    <div class="col">Desa/Kelurahan :</div>
+                </div>
+                <div class="row">
+                    <div class="col">Kec : Kec. Kota Bogor Utara</div>
+                    <div class="col">Kab/Kota : Kota Bogor</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-1 numIncrement2"></div>
+            <div class="col col-3">Telepon yang dapat dihubungi</div>
+            <div class="col col-8"></div>
+        </div>
+        <div class="row" style="height: 16rem;">
+            <div class="col text-center d-flex justify-content-center">
+                <div class="row text-center">
+                    <p class="mt-2">Orang Tua/Wali</p>
+                    <p class="align-self-end ttd">(Alex Wirawan)</p>
+                </div>
+            </div>
+            <div class="col text-center d-flex justify-content-center">
+                <div class="row text-center">
+                    <p class="mt-2">Kota Bogor, 19 Mei 2022.<br>Calon Peserta Didik</p>
+                    <p class="align-self-end ttd">(Kimora Lakeisha Setiawan)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
