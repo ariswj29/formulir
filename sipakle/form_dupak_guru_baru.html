@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href=".././bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet" >
+    <style>
+	  body{
+		  zoom: 0.6;
+	  }
+
+	  table{
+		table-layout: auto;
+	  }
+
+      table, th, td {
+          border: 1px solid black;
+		  padding: 5px 10px;
+      }
+	  
+	  th{
+		  font-weight: 700;
+	  }
+
+      .bg {
+        /* background-image: url("img/wm_bukti.png"); */
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 700px;
+      }
+
+      .nodaftar {
+        display: flex;
+        text-align: center;
+        align-items: center;
+		margin-left: 2px;
+      }
+
+      .nodaftar > div {
+        font-size: 18px;
+        font-weight: 700;
+        margin-right: 2px;
+        padding: 5px 15px;
+        border: .8px dashed black;
+      }
+
+      .pilihan > div > div {
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        padding: 5px 20px;
+        border: .8px dashed black;
+      }
+
+	  .vertical-top{
+		vertical-align: top,
+	  }
+
+      .jarak-sekolah{
+      	width: 120px;
+      }
+
+      .no-pilihan{
+        background-color: #c9c9c9;
+      }
+
+      .no-sekolah-pilihan, .sekolah-pilihan, .jarak-sekolah{
+        font-weight: 700;
+      }
+
+	  .w-10px{
+		  width: 10px;
+	  }
+
+	  .bordnone{
+		  border: 0;
+	  }
+
+	  @media print {
+		.page {page-break-after: always;}
+		}
+
+    </style>
+</head>
+<body>
+	<div class="bg">
+		<table class="page bordnone">
+			<thead class="bordnone">
+				<tr class="bordnone">
+					<th class="bordnone" colspan="14">DAFTAR PENETAPAN</th>
+				</tr>
+				<tr class="bordnone">
+					<th class="bordnone" colspan="14">PENETAPAN ANGKA KREDIT GURU</th>
+				</tr>
+				<tr>
+					<th>NO</th>
+					<th colspan="13" class="text-center" style="width: 71.5rem;">KETERANGAN PERORANGAN	</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="text-center">1</td>
+					<td colspan="6">Nama</td>
+					<td colspan="7">Zulham Harahap, S.Pd.</td>
+				</tr>
+				<tr>
+					<td class="text-center">2</td>
+					<td colspan="6">NIP</td>
+					<td colspan="7">197211172009011001</td>
+				</tr>
+				<tr>
+					<td class="text-center">3</td>
+					<td colspan="6">NUPTK</td>
+					<td colspan="7">1139749651300013</td>
+				</tr>
+				<tr>
+					<td class="text-center">4</td>
+					<td colspan="6">Nomor Seri Kartu Pegawai</td>
+					<td colspan="7">N 386468</td>
+				</tr>
+				<tr>
+					<td class="text-center">5</td>
+					<td colspan="6">Tempat dan Tanggal Lahir</td>
+					<td colspan="7">Semangka, 07 Agustus 1966</td>
+				</tr>
+				<tr>
+					<td class="text-center">6</td>
+					<td colspan="6">Jenis Kelamin</td>
+					<td colspan="7">Laki-Laki</td>
+				</tr>
+				<tr>
+					<td class="text-center">7</td>
+					<td colspan="6">Pendidikan yang diperhitungkan Angka Kreditnya</td>
+					<td colspan="7">S1/Akta IV</td>
+				</tr>
+				<tr>
+					<td class="text-center">8</td>
+					<td colspan="6">Pangkat/Golongan Ruang/TMT</td>
+					<td colspan="7">Penata Muda, III/a</td>
+				</tr>
+				<tr>
+					<td class="text-center">9</td>
+					<td colspan="6">Jabatan</td>
+					<td colspan="7">Guru Pertama</td>
+				</tr>
+				<tr>
+					<td class="text-center" rowspan="2">10</td>
+					<td colspan="5" rowspan="2">Masa Kerja Golongan</td>
+					<td colspan="1">Lama</td>
+					<td colspan="7">12 Tahun 04 Bulan</td>
+				</tr>
+				<tr>
+					<td colspan="1">Baru</td>
+					<td colspan="7">11 Tahun 10 Bulan</td>
+				</tr>
+				<tr>
+					<td class="text-center">11</td>
+					<td colspan="6">Jenis Guru</td>
+					<td colspan="7">Guru Mata Pelajaran</td>
+				</tr>
+				<tr>
+					<td class="text-center">12</td>
+					<td colspan="6">Unit Kerja</td>
+					<td colspan="7">SMP Negeri 1 Durian</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="bg">
+        <table class="page">
+			<thead>
+				<tr class="text-center">
+					<th colspan="14">UNSUR YANG DINILAI</th>
+				</tr>
+				<tr>
+					<th rowspan="3" colspan="1" class="text-center align-middle">NO</th>
+					<th rowspan="3" colspan="7" class="text-center align-middle">UNSUR, SUB UNSUR DAN BUTIR KEGIATAN</th>
+					<th colspan="6" class="text-center">ANGKA KREDIT MENURUT</th>
+				</tr>
+				<tr>
+					<th colspan="3" class="text-center">INSTANSI PENGUSUL</th>
+					<th colspan="3" class="text-center">INSTANSI PENGUSUL</th>
+				</tr>
+				<tr>
+					<th class="text-center" style="width: 5rem;">Lama</th>
+					<th class="text-center" style="width: 5rem;">Baru</th>
+					<th class="text-center" style="width: 5rem;">Jumlah</th>
+					<th class="text-center" style="width: 5rem;">Lama</th>
+					<th class="text-center" style="width: 5rem;">Baru</th>
+					<th class="text-center" style="width: 5rem;">Jumlah</th>
+				</tr>
+				<tr style="background-color: #ccffff;">
+					<th class="text-center" style="height: 5px; padding: 0;"  colspan="1">1</th>
+					<th class="text-center" style="height: 5px; padding: 0;"  colspan="7">2</th>
+					<th class="text-center" style="height: 5px; padding: 0;" >3</th>
+					<th class="text-center" style="height: 5px; padding: 0;" >4</th>
+					<th class="text-center" style="height: 5px; padding: 0;" >5</th>
+					<th class="text-center" style="height: 5px; padding: 0;" >6</th>
+					<th class="text-center" style="height: 5px; padding: 0;" >7</th>
+					<th class="text-center" style="height: 5px; padding: 0;" >8</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="1" rowspan="30" class="fw-bold align-top text-center">I</td>
+					<td colspan="7" class="fw-bold">UNSUR UTAMA</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+
+			<!-- PERTAMAAA -->
+				<tr>
+					<td colspan="1" rowspan="7" class="fw-bold align-top text-center">1</td>
+					<td colspan="6" class="fw-bold">PENDIDIKAN</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+
+				<!-- Mengikuti Pendidikan -->
+				<div class="Mengikuti Pendidikan">
+					<tr>
+						<td colspan="1" rowspan="4" class="fw-bold text-center align-top">A.</td>
+						<td colspan="5" class="fw-bold" style="width: 40rem;">Mengikuti pendidikan dan memperoleh gelar/ijazah/akta</td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+					</tr>
+					<tr>
+						<td colspan="1" class="fw-bold text-center w-10px">1.</td>
+						<td colspan="4" class="fw-bold">Doktor (S-3)</td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+					</tr>
+					<tr>
+						<td colspan="1" class="fw-bold text-center w-10px">2.</td>
+						<td colspan="4" class="fw-bold">Magister (S-2)</td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+					</tr>
+					<tr>
+						<td colspan="1" class="fw-bold text-center w-10px">3.</td>
+						<td colspan="4" class="fw-bold">Sarjana (S-1)/Diploma IV</td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+					</tr>
+				</div>
+
+				<!-- Mengikuti Pelatihan -->
+				<div class="Mengikuti Pelatihan">
+					<tr>
+						<td colspan="1" rowspan="2" class="fw-bold text-center align-top">B.</td>
+						<td colspan="5" class="fw-bold" style="width: 40rem;">Mengikuti pelatihan prajabatan</td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+					</tr>
+					<tr>
+						<td colspan="1" class="fw-bold text-center w-10px">-</td>
+						<td colspan="4" class="fw-bold">Pelatihan prajabatan fungsional bagi guru calon pegawai negeri sipil/program induksi</td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+						<td colspan="1" class="fw-bold"></td>
+					</tr>
+				</div>
+
+
+			<!-- KEDUAAAA -->
+				<tr>
+					<td colspan="1" rowspan="20" class="fw-bold align-top text-center">2</td>
+					<td colspan="6" class="fw-bold">PEMBELAJARAN/BIMBINGAN DAN TUGAS TERTENTU</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+
+				<!-- Melaksanakan Proses Pembelajaran -->
+				<tr>
+					<td colspan="1" rowspan="2" class="fw-bold text-center align-top">A.</td>
+					<td colspan="5" class="fw-bold" style="width: 40rem;">Melaksanakan proses pembelajaran</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">-</td>
+					<td colspan="4" class="fw-bold">Merencanakan dan melaksanakan pembelajaran, mengevaluasi dan menilai hasil pembelajaran, menganalisis hasil pembelajaran, melaksanakan tindak lanjut hasil penilaian<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+
+				<!-- Melaksanakan Melaksanakan proses bimbingan -->
+				<tr>
+					<td colspan="1" rowspan="2" class="fw-bold text-center align-top">B.</td>
+					<td colspan="5" class="fw-bold" style="width: 40rem;">Melaksanakan proses bimbingan</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">-</td>
+					<td colspan="4" class="fw-bold">Merencanakan dan melaksanakan pembimbingan, mengevaluasi dan menilai hasil bimbingan, menganalisis hasil bimbingan, melaksanakan tindak lanjut hasil pembimbingan<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+
+				<!-- Melaksanakan Tugas Lain -->
+				<tr>
+					<td colspan="1" rowspan="14" class="fw-bold text-center align-top">C.</td>
+					<td colspan="5" class="fw-bold" style="width: 40rem;">Melaksanakan tugas lain yang relevan dengan fungsi sekolah/madrasah</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">1</td>
+					<td colspan="4" class="fw-bold">Menjadi Kepala Sekolah/Madrasah per tahun</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">2</td>
+					<td colspan="4" class="fw-bold">Menjadi Wakil Kepala Sekolah/Madrasah per tahun</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">3</td>
+					<td colspan="4" class="fw-bold">Menjadi ketua program keahlian/program studi atau yang sejenisnya</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">4</td>
+					<td colspan="4" class="fw-bold">Menjadi kepala perpustakaan</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">5</td>
+					<td colspan="4" class="fw-bold">Menjadi kepala laboratorium, bengkel, unit produksi atau yang sejenisnya</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">6</td>
+					<td colspan="4" class="fw-bold">Menjadi pembimbing khusus pada satuan pendidikan yang menyelenggarakan pendidikan inklusi, pendidikan terpadu atau yang sejenisnya.</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">7</td>
+					<td colspan="4" class="fw-bold">Menjadi wali kelas</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">8</td>
+					<td colspan="4" class="fw-bold">Menyusun kurikulum pada satuan pendidikannya</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">9</td>
+					<td colspan="4" class="fw-bold">Menjadi pengawas penilaian dan evaluasi terhadap  proses dan hasil belajar.</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">10</td>
+					<td colspan="4" class="fw-bold">Membimbing guru pemula dalam program induksi</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">11</td>
+					<td colspan="4" class="fw-bold">Membimbing siswa dalam kegiatan ekstrakurikuler</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">12</td>
+					<td colspan="4" class="fw-bold">Menjadi pembimbing pada penyusunan publikasi ilmiah dan karya inovatif</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="1" class="fw-bold text-center w-10px">13</td>
+					<td colspan="4" class="fw-bold">Melaksanakan pembimbingan pada kelas yang menjadi tanggungjawabnya (khusus Guru Kelas)</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+				<tr>
+					<td colspan="6" style="height: 4rem;" class="fw-bold text-center fs-6 w-10px">JUMLAH</td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+					<td colspan="1" class="fw-bold"></td>
+				</tr>
+
+
+
+
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
